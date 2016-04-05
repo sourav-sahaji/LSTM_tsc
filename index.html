@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>LSTM time-series classification by RobRomijnders</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>LSTM time-series classification</h1>
+        <p>An LSTM for time-series classification</p>
+
+        <p class="view"><a href="https://github.com/RobRomijnders/LSTM_tsc">View the Project on GitHub <small>RobRomijnders/LSTM_tsc</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/RobRomijnders/LSTM_tsc/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/RobRomijnders/LSTM_tsc/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/RobRomijnders/LSTM_tsc">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="lstm-for-time-series-classification" class="anchor" href="#lstm-for-time-series-classification" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LSTM for time-series classification</h3>
+
+<p>This post implements a Long Short-term memory for time series classification(LSTM). An LSTM is the extension of the classical Recurrent Neural Network. It has more flexibility and interpretable features such as a memory it can read, write and forget.</p>
+
+<h2>
+<a id="context" class="anchor" href="#context" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Context</h2>
+
+<p>Over the last months, I ran into many LSTM's for sequence-to-sequence modelling. That is also where the code base for this projects comes from. I didn't find any implementations for LSTM's for classification of time-series. 
+Inspired by a paper by Zhicheng Cui in 2016 on ArXiv and information on <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">this</a> website, I decided to make my own.</p>
+
+<h2>
+<a id="first-stage" class="anchor" href="#first-stage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First stage</h2>
+
+<p>The implementation can be improved in many ways. For now, the code works on a self-made dataset containing sinusoids and a dataset from the <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">UCR archive</a> named TwoPatterns. I heavily equipped the code with histograms, plots and visualizations to track the training procedure. I hope this enables you to get a feeling for the LSTM and to employ it on your own dataset.
+Moreover, I included many comments to explain the workflow of the code. I hope it also enables people unfamiliar to Tensorflow to start working with LSTM's.</p>
+
+<h3>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h3>
+
+<p>The code is equipped with many TensorBoard diagrams, so you can follow your training:
+<img src="https://github.com/RobRomijnders/LSTM_tsc/blob/master/progress/tb_for_github_io.png?raw=true" alt="TensorBoard_diagrams">
+Running the code without any changes will result in a diagram like this:
+<img src="https://github.com/RobRomijnders/LSTM_tsc/blob/master/progress/loss_acc_for_github_io.png?raw=true" alt="loss_acc_diagram">
+And after many iterations, it may look like this:
+<img src="https://github.com/RobRomijnders/LSTM_tsc/blob/master/progress/160405_01.png?raw=true" alt="loss_acc_diagram_long"></p>
+
+<p>Credits for this project go to <a href="https://www.tensorflow.org/versions/r0.7/tutorials/recurrent/index.html#recurrent-neural-networks">Tensorflow</a> for providing a strong example, the <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">UCR archive</a> for the dataset and my friend Ryan for strong feedback.</p>
+
+<p>As always, I am curious to any comments and questions. Reach me at <a href="mailto:romijndersrob@gmail.com">romijndersrob@gmail.com</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/RobRomijnders">RobRomijnders</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
