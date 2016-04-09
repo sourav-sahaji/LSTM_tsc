@@ -36,14 +36,19 @@
 <h2>
 <a id="context" class="anchor" href="#context" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Context</h2>
 
-<p>Over the last months, I ran into many LSTM's for sequence-to-sequence modelling. That is also where the code base for this projects comes from. I didn't find any implementations for LSTM's for classification of time-series. 
-Inspired by a paper by Zhicheng Cui in 2016 on ArXiv and information on <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">this</a> website, I decided to make my own.</p>
+<p>You can find tutorials on LSTM's for sequence-to-sequence modelling. However, I haven't found any resources on sequence-to-label modelling. That ignited me to build an LSTM for time series classification in Tensorflow. This post is the result. 
+Part of the inspiration springs from <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">this</a> website. They offer a large database of time-series classification tasks for researchers to play with. Credits to them for making this database!</p>
 
 <h2>
 <a id="first-stage" class="anchor" href="#first-stage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First stage</h2>
 
-<p>The implementation can be improved in many ways. For now, the code works on a self-made dataset containing sinusoids and a dataset from the <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">UCR archive</a> named TwoPatterns. I heavily equipped the code with histograms, plots and visualizations to track the training procedure. I hope this enables you to get a feeling for the LSTM and to employ it on your own dataset.
+<p>The implementation works on a self-made dataset containing sinusoids and a dataset from the <a href="http://www.cs.ucr.edu/%7Eeamonn/time_series_data/">UCR archive</a> named TwoPatterns. I heavily equipped the code with histograms, plots and visualizations to track the training procedure. I hope this enables you to get a feeling for the LSTM and to employ it on your own dataset.
 Moreover, I included many comments to explain the workflow of the code. I hope it also enables people unfamiliar to Tensorflow to start working with LSTM's.</p>
+
+<h2>
+<a id="improvement" class="anchor" href="#improvement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Improvement</h2>
+
+<p>The code calls for many visualizations and histograms and contains many comment sections. That is a part of the improvement process, because the performance is way less than expected. In <a href="robromijnders.github.io">this post</a>, I implement a CNN for the same dataset. It gets to 98% test-accuracy with a light-weight model. Our LSTM, however, reaches only 60% test-accuracy. I am working and learning hard to improve this model. I hope other people join me in this effort and I'd be glad to come into contact.</p>
 
 <h3>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h3>
