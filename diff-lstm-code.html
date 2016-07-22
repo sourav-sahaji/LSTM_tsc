@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>File Compare</title>
+  <style type="text/css">
+  #page {
+    font-family: sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: x-small;
+    vertical-align: top;
+  }
+  td.fileName {
+    background: #E6E6E6;
+    font-family: sans-serif;
+    font-size: small;
+  }
+  td.lineNumber {
+    text-align: right;
+    background: #FFC800;
+  }
+  td.added {
+    background: #BEF0BE;
+  }
+  td.removed {
+    background: #C8C8FF;
+  }
+  td.changed {
+    background: #FFC8C8;
+  }
+  td.equal {
+    background: #FFFFFF;
+  }
+  td.empty {
+    background: #F2F2F2;
+  }
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="2" class="filename">tsc_main_custom.ipynb&nbsp;(Index)</td>
+      <td colspan="2" class="filename">tsc_main_custom.ipynb&nbsp;(Working&nbsp;Tree)</td>
+    </tr>
+      <tr>
+<td class="lineNumber">1</td><td class="equal">{</td><td class="lineNumber">1</td><td class="equal">{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">2</td><td class="equal">&nbsp;&quot;cells&quot;:&nbsp;[</td><td class="lineNumber">2</td><td class="equal">&nbsp;&quot;cells&quot;:&nbsp;[</td>
+      </tr>
+      <tr>
+<td class="lineNumber">3</td><td class="equal">&nbsp;&nbsp;{</td><td class="lineNumber">3</td><td class="equal">&nbsp;&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">4</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td><td class="lineNumber">4</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">5</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td><td class="lineNumber">5</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">6</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">6</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">7</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td><td class="lineNumber">7</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td>
+      </tr>
+      <tr>
+<td class="lineNumber">8</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">8</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">9</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td><td class="lineNumber">9</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">10</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td><td class="lineNumber">10</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td>
+      </tr>
+      <tr>
+<td class="lineNumber">11</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;LSTM&nbsp;for&nbsp;time&nbsp;series&nbsp;classification\n&quot;,</td><td class="lineNumber">11</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;LSTM&nbsp;for&nbsp;time&nbsp;series&nbsp;classification\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">12</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;Made:&nbsp;30&nbsp;march&nbsp;2016\n&quot;,</td><td class="lineNumber">12</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;Made:&nbsp;30&nbsp;march&nbsp;2016\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">13</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">13</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">14</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;This&nbsp;model&nbsp;takes&nbsp;in&nbsp;time&nbsp;series&nbsp;and&nbsp;class&nbsp;labels.\n&quot;,</td><td class="lineNumber">14</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;This&nbsp;model&nbsp;takes&nbsp;in&nbsp;time&nbsp;series&nbsp;and&nbsp;class&nbsp;labels.\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">15</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;The&nbsp;LSTM&nbsp;models&nbsp;the&nbsp;time&nbsp;series.&nbsp;A&nbsp;fully-connected&nbsp;layer\n&quot;,</td><td class="lineNumber">15</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;The&nbsp;LSTM&nbsp;models&nbsp;the&nbsp;time&nbsp;series.&nbsp;A&nbsp;fully-connected&nbsp;layer\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">16</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;generates&nbsp;an&nbsp;output&nbsp;to&nbsp;be&nbsp;classified&nbsp;with&nbsp;Softmax\n&quot;,</td><td class="lineNumber">16</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;generates&nbsp;an&nbsp;output&nbsp;to&nbsp;be&nbsp;classified&nbsp;with&nbsp;Softmax\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">17</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">17</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">18</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;absolute_import\n&quot;,</td><td class="lineNumber">18</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;absolute_import\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">19</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;division\n&quot;,</td><td class="lineNumber">19</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;division\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">20</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;print_function\n&quot;,</td><td class="lineNumber">20</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;__future__&nbsp;import&nbsp;print_function\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">21</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">21</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">22</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;numpy&nbsp;as&nbsp;np\n&quot;,</td><td class="lineNumber">22</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;numpy&nbsp;as&nbsp;np\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">23</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;tensorflow&nbsp;as&nbsp;tf\n&quot;,</td><td class="lineNumber">23</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;tensorflow&nbsp;as&nbsp;tf\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">24</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;matplotlib.pyplot&nbsp;as&nbsp;plt\n&quot;,</td><td class="lineNumber">24</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;import&nbsp;matplotlib.pyplot&nbsp;as&nbsp;plt\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">25</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;tensorflow.python.framework&nbsp;import&nbsp;ops\n&quot;,</td><td class="lineNumber">25</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;tensorflow.python.framework&nbsp;import&nbsp;ops\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">26</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;tensorflow.python.ops&nbsp;import&nbsp;clip_ops&quot;</td><td class="lineNumber">26</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;from&nbsp;tensorflow.python.ops&nbsp;import&nbsp;clip_ops&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">27</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td><td class="lineNumber">27</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td>
+      </tr>
+      <tr>
+<td class="lineNumber">28</td><td class="equal">&nbsp;&nbsp;},</td><td class="lineNumber">28</td><td class="equal">&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">29</td><td class="equal">&nbsp;&nbsp;{</td><td class="lineNumber">29</td><td class="equal">&nbsp;&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">30</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td><td class="lineNumber">30</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">31</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td><td class="lineNumber">31</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">32</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">32</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">33</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;true</td><td class="lineNumber">33</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;true</td>
+      </tr>
+      <tr>
+<td class="lineNumber">34</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">34</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">35</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td><td class="lineNumber">35</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">36</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td><td class="lineNumber">36</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">37</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;def&nbsp;format_data(data):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">38</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;print(\&quot;Input&nbsp;Shape&nbsp;of&nbsp;data\&quot;,&nbsp;data.shape)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">39</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;formatted_data&nbsp;=&nbsp;np.reshape(data,[data.shape[0]/30,30,data.shape[1]])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">40</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;print(\&quot;Output&nbsp;Shape&nbsp;of&nbsp;data\&quot;,&nbsp;formatted_data.shape)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">41</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;formatted_data\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">42</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">37</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;def&nbsp;sample_batch(X_train,y_train,batch_size,num_steps):\n&quot;,</td><td class="lineNumber">43</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;def&nbsp;sample_batch(X_train,y_train,batch_size,num_steps):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">38</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\&quot;\&quot;\&quot;&nbsp;Function&nbsp;to&nbsp;sample&nbsp;a&nbsp;batch&nbsp;for&nbsp;training\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">44</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\&quot;\&quot;\&quot;&nbsp;Function&nbsp;to&nbsp;sample&nbsp;a&nbsp;batch&nbsp;for&nbsp;training\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">39</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N,data_len&nbsp;=&nbsp;X_train.shape\n&quot;,</td><td class="lineNumber">45</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N,data_len,data_dim&nbsp;=&nbsp;X_train.shape\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">40</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;ind_N&nbsp;=&nbsp;np.random.choice(N,batch_size,replace=False)\n&quot;,</td><td class="lineNumber">46</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;ind_N&nbsp;=&nbsp;np.random.choice(N,batch_size,replace=False)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">41</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;ind_start&nbsp;=&nbsp;np.random.choice(data_len-num_steps,1)\n&quot;,</td><td class="lineNumber">47</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;ind_start&nbsp;=&nbsp;0#np.random.choice(data_len-num_steps,1)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">42</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#form&nbsp;batch\n&quot;,</td><td class="lineNumber">48</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#form&nbsp;batch\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">43</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;X_batch&nbsp;=&nbsp;X_train[ind_N,ind_start:ind_start+num_steps]\n&quot;,</td><td class="lineNumber">49</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;X_batch&nbsp;=&nbsp;X_train[ind_N,ind_start:ind_start+num_steps,:]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">44</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;y_batch&nbsp;=&nbsp;y_train[ind_N]\n&quot;,</td><td class="lineNumber">50</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;y_batch&nbsp;=&nbsp;y_train[ind_N]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">45</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;X_batch,y_batch\n&quot;,</td><td class="lineNumber">51</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;X_batch,y_batch\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">46</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">52</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">47</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;def&nbsp;check_test(X_test,y_test,batch_size,num_steps):\n&quot;,</td><td class="lineNumber">53</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;def&nbsp;check_test(X_test,y_test,batch_size,num_steps):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">48</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\&quot;\&quot;\&quot;&nbsp;Function&nbsp;to&nbsp;check&nbsp;the&nbsp;test_accuracy&nbsp;on&nbsp;the&nbsp;entire&nbsp;test&nbsp;set\n&quot;,</td><td class="lineNumber">54</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\&quot;\&quot;\&quot;&nbsp;Function&nbsp;to&nbsp;check&nbsp;the&nbsp;test_accuracy&nbsp;on&nbsp;the&nbsp;entire&nbsp;test&nbsp;set\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">49</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;workaround.&nbsp;I&nbsp;haven't&nbsp;figured&nbsp;out&nbsp;yet&nbsp;how&nbsp;to&nbsp;make&nbsp;the&nbsp;graph\n&quot;,</td><td class="lineNumber">55</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;workaround.&nbsp;I&nbsp;haven't&nbsp;figured&nbsp;out&nbsp;yet&nbsp;how&nbsp;to&nbsp;make&nbsp;the&nbsp;graph\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">50</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;general&nbsp;for&nbsp;multiple&nbsp;batch&nbsp;sizes.\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">56</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;general&nbsp;for&nbsp;multiple&nbsp;batch&nbsp;sizes.\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">51</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;=&nbsp;X_test.shape[0]\n&quot;,</td><td class="lineNumber">57</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;=&nbsp;X_test.shape[0]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">52</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;num_batch&nbsp;=&nbsp;np.floor(N/batch_size)\n&quot;,</td><td class="lineNumber">58</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;num_batch&nbsp;=&nbsp;np.floor(N/batch_size)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">53</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;test_acc&nbsp;=&nbsp;np.zeros(num_batch)\n&quot;,</td><td class="lineNumber">59</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;test_acc&nbsp;=&nbsp;np.zeros(num_batch)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">54</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(int(num_batch)):\n&quot;,</td><td class="lineNumber">60</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(int(num_batch)):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">55</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_test,y_test,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">61</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_test,y_test,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">56</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test_acc[i]&nbsp;=&nbsp;session.run(accuracy,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state:state,ke<br>ep_prob:1})\n&quot;,</td><td class="lineNumber">62</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test_acc[i]&nbsp;=&nbsp;session.run(accuracy,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state:state,ke<br>ep_prob:1})\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">57</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;np.mean(test_acc)\n&quot;</td><td class="lineNumber">63</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;np.mean(test_acc)\n&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">58</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td><td class="lineNumber">64</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td>
+      </tr>
+      <tr>
+<td class="lineNumber">59</td><td class="equal">&nbsp;&nbsp;},</td><td class="lineNumber">65</td><td class="equal">&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">60</td><td class="equal">&nbsp;&nbsp;{</td><td class="lineNumber">66</td><td class="equal">&nbsp;&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">61</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td><td class="lineNumber">67</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">62</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td><td class="lineNumber">68</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">63</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">69</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">64</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td><td class="lineNumber">70</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td>
+      </tr>
+      <tr>
+<td class="lineNumber">65</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">71</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">66</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td><td class="lineNumber">72</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">67</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td><td class="lineNumber">73</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td>
+      </tr>
+      <tr>
+<td class="lineNumber">68</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Hyperparamaters\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">74</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Hyperparamaters\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">69</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;init_scale&nbsp;=&nbsp;0.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Initial&nbsp;scale&nbsp;for&nbsp;the&nbsp;states\n&quot;,</td><td class="lineNumber">75</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;init_scale&nbsp;=&nbsp;0.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Initial&nbsp;scale&nbsp;for&nbsp;the&nbsp;states\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">70</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;max_grad_norm&nbsp;=&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Clipping&nbsp;of&nbsp;the&nbsp;gradient&nbsp;before&nbsp;update\n&quot;,</td><td class="lineNumber">76</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;max_grad_norm&nbsp;=&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Clipping&nbsp;of&nbsp;the&nbsp;gradient&nbsp;before&nbsp;update\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">71</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;num_layers&nbsp;=&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;stacked&nbsp;LSTM&nbsp;layers\n&quot;,</td><td class="lineNumber">77</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;num_layers&nbsp;=&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;stacked&nbsp;LSTM&nbsp;layers\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">72</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;num_steps&nbsp;=&nbsp;64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;steps&nbsp;to&nbsp;backprop&nbsp;over&nbsp;at&nbsp;every&nbsp;batch\n&quot;,</td><td class="lineNumber">78</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;num_steps&nbsp;=&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;steps&nbsp;to&nbsp;backprop&nbsp;over&nbsp;at&nbsp;every&nbsp;batch\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">73</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;hidden_size&nbsp;=&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;entries&nbsp;of&nbsp;the&nbsp;cell&nbsp;state&nbsp;of&nbsp;the&nbsp;LSTM\n&quot;,</td><td class="lineNumber">79</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;hidden_size&nbsp;=&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Number&nbsp;of&nbsp;entries&nbsp;of&nbsp;the&nbsp;cell&nbsp;state&nbsp;of&nbsp;the&nbsp;LSTM\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">74</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;max_iterations&nbsp;=&nbsp;2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Maximum&nbsp;iterations&nbsp;to&nbsp;train\n&quot;,</td><td class="lineNumber">80</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;max_iterations&nbsp;=&nbsp;2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Maximum&nbsp;iterations&nbsp;to&nbsp;train\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">75</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;batch_size&nbsp;=&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Batch&nbsp;size\n&quot;,</td><td class="lineNumber">81</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;batch_size&nbsp;=&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Batch&nbsp;size\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">76</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;dropout&nbsp;=&nbsp;0.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Keep&nbsp;probability&nbsp;of&nbsp;the&nbsp;dropout&nbsp;wrapper\n&quot;,</td><td class="lineNumber">82</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;dropout&nbsp;=&nbsp;0.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Keep&nbsp;probability&nbsp;of&nbsp;the&nbsp;dropout&nbsp;wrapper\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">77</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">83</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">78</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">84</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">79</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Place&nbsp;holders\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">85</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Place&nbsp;holders\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">80</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;input_data&nbsp;=&nbsp;tf.placeholder(tf.float32,&nbsp;[None,&nbsp;num_steps],&nbsp;name&nbsp;=&nbsp;'input_data')\n&quot;,</td><td class="lineNumber">86</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;input_data&nbsp;=&nbsp;tf.placeholder(tf.float32,&nbsp;[None,&nbsp;num_steps,8],&nbsp;name&nbsp;=&nbsp;'input_data')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">81</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;targets&nbsp;=&nbsp;tf.placeholder(tf.int64,&nbsp;[None],&nbsp;name='Targets')\n&quot;,</td><td class="lineNumber">87</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;targets&nbsp;=&nbsp;tf.placeholder(tf.int64,&nbsp;[None],&nbsp;name='Targets')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">82</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Used&nbsp;later&nbsp;on&nbsp;for&nbsp;drop_out.&nbsp;At&nbsp;testtime,&nbsp;we&nbsp;pass&nbsp;1.0\n&quot;,</td><td class="lineNumber">88</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Used&nbsp;later&nbsp;on&nbsp;for&nbsp;drop_out.&nbsp;At&nbsp;testtime,&nbsp;we&nbsp;pass&nbsp;1.0\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">83</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;keep_prob&nbsp;=&nbsp;tf.placeholder(\&quot;float\&quot;,&nbsp;name&nbsp;=&nbsp;'Drop_out_keep_prob')\n&quot;,</td><td class="lineNumber">89</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;keep_prob&nbsp;=&nbsp;tf.placeholder(\&quot;float\&quot;,&nbsp;name&nbsp;=&nbsp;'Drop_out_keep_prob')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">84</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">90</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">85</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;initializer&nbsp;=&nbsp;tf.random_uniform_initializer(-init_scale,init_scale)\n&quot;,</td><td class="lineNumber">91</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;initializer&nbsp;=&nbsp;tf.random_uniform_initializer(-init_scale,init_scale)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">86</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.variable_scope(\&quot;model\&quot;,&nbsp;initializer=initializer):\n&quot;,</td><td class="lineNumber">92</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.variable_scope(\&quot;model\&quot;,&nbsp;initializer=initializer):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">87</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;\&quot;\&quot;\&quot;Define&nbsp;the&nbsp;basis&nbsp;LSTM\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">93</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;\&quot;\&quot;\&quot;Define&nbsp;the&nbsp;basis&nbsp;LSTM\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">88</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.name_scope(\&quot;LSTM_setup\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td><td class="lineNumber">94</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.name_scope(\&quot;LSTM_setup\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">89</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;lstm_cell&nbsp;=&nbsp;tf.nn.rnn_cell.BasicLSTMCell(hidden_size)\n&quot;,</td><td class="lineNumber">95</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;lstm_cell&nbsp;=&nbsp;tf.nn.rnn_cell.BasicLSTMCell(hidden_size)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">90</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;lstm_cell&nbsp;=&nbsp;tf.nn.rnn_cell.DropoutWrapper(lstm_cell,&nbsp;output_keep_prob=keep_prob)\n&quot;,</td><td class="lineNumber">96</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;lstm_cell&nbsp;=&nbsp;tf.nn.rnn_cell.DropoutWrapper(lstm_cell,&nbsp;output_keep_prob=keep_prob)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">91</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;cell&nbsp;=&nbsp;tf.nn.rnn_cell.MultiRNNCell([lstm_cell]&nbsp;*&nbsp;num_layers)\n&quot;,</td><td class="lineNumber">97</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;cell&nbsp;=&nbsp;tf.nn.rnn_cell.MultiRNNCell([lstm_cell]&nbsp;*&nbsp;num_layers)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">92</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;initial_state&nbsp;=&nbsp;cell.zero_state(batch_size,&nbsp;tf.float32)&nbsp;&nbsp;&nbsp;#Initialize&nbsp;the&nbsp;zero_state.&nbsp;Note&nbsp;that&nbsp;it&nbsp;has&nbsp;to&nbsp;be&nbsp;ru<br>n&nbsp;in&nbsp;session-time\n&quot;,</td><td class="lineNumber">98</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;initial_state&nbsp;=&nbsp;cell.zero_state(batch_size,&nbsp;tf.float32)&nbsp;&nbsp;&nbsp;#Initialize&nbsp;the&nbsp;zero_state.&nbsp;Note&nbsp;that&nbsp;it&nbsp;has&nbsp;to&nbsp;be&nbsp;ru<br>n&nbsp;in&nbsp;session-time\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">93</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#We&nbsp;have&nbsp;only&nbsp;one&nbsp;input&nbsp;dimension,&nbsp;but&nbsp;we&nbsp;generalize&nbsp;our&nbsp;code&nbsp;for&nbsp;future&nbsp;expansion\n&quot;,</td><td class="lineNumber">99</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#We&nbsp;have&nbsp;only&nbsp;one&nbsp;input&nbsp;dimension,&nbsp;but&nbsp;we&nbsp;generalize&nbsp;our&nbsp;code&nbsp;for&nbsp;future&nbsp;expansion\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">94</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;inputs&nbsp;=&nbsp;tf.expand_dims(input_data,&nbsp;2)\n&quot;,</td><td class="lineNumber">100</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;inputs&nbsp;=&nbsp;input_data#tf.expand_dims(input_data,&nbsp;2)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">95</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">101</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">96</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Define&nbsp;the&nbsp;recurrent&nbsp;nature&nbsp;of&nbsp;the&nbsp;LSTM\n&quot;,</td><td class="lineNumber">102</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Define&nbsp;the&nbsp;recurrent&nbsp;nature&nbsp;of&nbsp;the&nbsp;LSTM\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">97</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Re-use&nbsp;variables&nbsp;only&nbsp;after&nbsp;first&nbsp;time-step\n&quot;,</td><td class="lineNumber">103</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Re-use&nbsp;variables&nbsp;only&nbsp;after&nbsp;first&nbsp;time-step\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">98</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.name_scope(\&quot;LSTM\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td><td class="lineNumber">104</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.name_scope(\&quot;LSTM\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">99</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;outputs&nbsp;=&nbsp;[]\n&quot;,</td><td class="lineNumber">105</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;outputs&nbsp;=&nbsp;[]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">100</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;state&nbsp;=&nbsp;initial_state\n&quot;,</td><td class="lineNumber">106</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;state&nbsp;=&nbsp;initial_state\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">101</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;tf.variable_scope(\&quot;LSTM_state\&quot;):\n&quot;,</td><td class="lineNumber">107</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;tf.variable_scope(\&quot;LSTM_state\&quot;):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">102</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;time_step&nbsp;in&nbsp;range(num_steps):\n&quot;,</td><td class="lineNumber">108</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;time_step&nbsp;in&nbsp;range(num_steps):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">103</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;time_step&nbsp;&gt;&nbsp;0:&nbsp;tf.get_variable_scope().reuse_variables()\n&quot;,</td><td class="lineNumber">109</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;time_step&nbsp;&gt;&nbsp;0:&nbsp;tf.get_variable_scope().reuse_variables()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">104</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(cell_output,&nbsp;state)&nbsp;=&nbsp;cell(inputs[:,&nbsp;time_step,&nbsp;:],&nbsp;state)\n&quot;,</td><td class="lineNumber">110</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(cell_output,&nbsp;state)&nbsp;=&nbsp;cell(inputs[:,&nbsp;time_step,&nbsp;:],&nbsp;state)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">105</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputs.append(cell_output)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Now&nbsp;cell_output&nbsp;is&nbsp;size&nbsp;[batch_size&nbsp;x&nbsp;hidden_size]\n&quot;,</td><td class="lineNumber">111</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputs.append(cell_output)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Now&nbsp;cell_output&nbsp;is&nbsp;size&nbsp;[batch_size&nbsp;x&nbsp;hidden_size]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">106</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;avg_output&nbsp;=&nbsp;tf.reduce_mean(tf.pack(outputs),0)\n&quot;,</td><td class="lineNumber">112</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;avg_output&nbsp;=&nbsp;tf.reduce_mean(tf.pack(outputs),0)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">107</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;size1&nbsp;=&nbsp;tf.shape(avg_output)\n&quot;,</td><td class="lineNumber">113</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;size1&nbsp;=&nbsp;tf.shape(avg_output)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">108</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;size2&nbsp;=&nbsp;tf.shape(cell_output)\n&quot;,</td><td class="lineNumber">114</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;size2&nbsp;=&nbsp;tf.shape(cell_output)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">109</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">115</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">110</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">116</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">111</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Generate&nbsp;a&nbsp;classification&nbsp;from&nbsp;the&nbsp;last&nbsp;cell_output\n&quot;,</td><td class="lineNumber">117</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Generate&nbsp;a&nbsp;classification&nbsp;from&nbsp;the&nbsp;last&nbsp;cell_output\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">112</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Note,&nbsp;this&nbsp;is&nbsp;where&nbsp;timeseries&nbsp;classification&nbsp;differs&nbsp;from&nbsp;sequence&nbsp;to&nbsp;sequence\n&quot;,</td><td class="lineNumber">118</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Note,&nbsp;this&nbsp;is&nbsp;where&nbsp;timeseries&nbsp;classification&nbsp;differs&nbsp;from&nbsp;sequence&nbsp;to&nbsp;sequence\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">113</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#modelling.&nbsp;We&nbsp;only&nbsp;output&nbsp;to&nbsp;Softmax&nbsp;at&nbsp;last&nbsp;time&nbsp;step\n&quot;,</td><td class="lineNumber">119</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#modelling.&nbsp;We&nbsp;only&nbsp;output&nbsp;to&nbsp;Softmax&nbsp;at&nbsp;last&nbsp;time&nbsp;step\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">114</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.name_scope(\&quot;Softmax\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td><td class="lineNumber">120</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.name_scope(\&quot;Softmax\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">115</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.variable_scope(\&quot;Softmax_params\&quot;):\n&quot;,</td><td class="lineNumber">121</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;with&nbsp;tf.variable_scope(\&quot;Softmax_params\&quot;):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">116</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Both&nbsp;datasets&nbsp;have&nbsp;four&nbsp;output&nbsp;classes.&nbsp;Improve&nbsp;the&nbsp;code&nbsp;by&nbsp;changing&nbsp;the&nbsp;4\n&quot;,</td><td class="lineNumber">122</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Both&nbsp;datasets&nbsp;have&nbsp;four&nbsp;output&nbsp;classes.&nbsp;Improve&nbsp;the&nbsp;code&nbsp;by&nbsp;changing&nbsp;the&nbsp;4\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">117</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;into&nbsp;a&nbsp;hyperparameter\n&quot;,</td><td class="lineNumber">123</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;into&nbsp;a&nbsp;hyperparameter\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">118</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;softmax_w&nbsp;=&nbsp;tf.get_variable(\&quot;softmax_w\&quot;,&nbsp;[hidden_size,&nbsp;4])\n&quot;,</td><td class="lineNumber">124</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;softmax_w&nbsp;=&nbsp;tf.get_variable(\&quot;softmax_w\&quot;,&nbsp;[hidden_size,&nbsp;4])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">119</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;softmax_b&nbsp;=&nbsp;tf.get_variable(\&quot;softmax_b\&quot;,&nbsp;[4])\n&quot;,</td><td class="lineNumber">125</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;softmax_b&nbsp;=&nbsp;tf.get_variable(\&quot;softmax_b\&quot;,&nbsp;[4])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">120</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;logits&nbsp;=&nbsp;tf.matmul(avg_output,&nbsp;softmax_w)&nbsp;+&nbsp;softmax_b\n&quot;,</td><td class="lineNumber">126</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;logits&nbsp;=&nbsp;tf.matmul(avg_output,&nbsp;softmax_w)&nbsp;+&nbsp;softmax_b\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">121</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Use&nbsp;sparse&nbsp;Softmax&nbsp;because&nbsp;we&nbsp;have&nbsp;mutually&nbsp;exclusive&nbsp;classes\n&quot;,</td><td class="lineNumber">127</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Use&nbsp;sparse&nbsp;Softmax&nbsp;because&nbsp;we&nbsp;have&nbsp;mutually&nbsp;exclusive&nbsp;classes\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">122</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;loss&nbsp;=&nbsp;tf.nn.sparse_softmax_cross_entropy_with_logits(logits,targets,name&nbsp;=&nbsp;'Sparse_softmax')\n&quot;,</td><td class="lineNumber">128</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;loss&nbsp;=&nbsp;tf.nn.sparse_softmax_cross_entropy_with_logits(logits,targets,name&nbsp;=&nbsp;'Sparse_softmax')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">123</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;cost&nbsp;=&nbsp;tf.reduce_sum(loss)&nbsp;/&nbsp;batch_size\n&quot;,</td><td class="lineNumber">129</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;cost&nbsp;=&nbsp;tf.reduce_sum(loss)&nbsp;/&nbsp;batch_size\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">124</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Pass&nbsp;on&nbsp;a&nbsp;summary&nbsp;to&nbsp;Tensorboard\n&quot;,</td><td class="lineNumber">130</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#Pass&nbsp;on&nbsp;a&nbsp;summary&nbsp;to&nbsp;Tensorboard\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">125</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;cost_summ&nbsp;=&nbsp;tf.scalar_summary('Cost',cost)\n&quot;,</td><td class="lineNumber">131</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;cost_summ&nbsp;=&nbsp;tf.scalar_summary('Cost',cost)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">126</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;Calculate&nbsp;the&nbsp;accuracy\n&quot;,</td><td class="lineNumber">132</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;Calculate&nbsp;the&nbsp;accuracy\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">127</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;correct_prediction&nbsp;=&nbsp;tf.equal(tf.argmax(logits,1),&nbsp;targets)\n&quot;,</td><td class="lineNumber">133</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;correct_prediction&nbsp;=&nbsp;tf.equal(tf.argmax(logits,1),&nbsp;targets)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">128</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;accuracy&nbsp;=&nbsp;tf.reduce_mean(tf.cast(correct_prediction,&nbsp;\&quot;float\&quot;))\n&quot;,</td><td class="lineNumber">134</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;accuracy&nbsp;=&nbsp;tf.reduce_mean(tf.cast(correct_prediction,&nbsp;\&quot;float\&quot;))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">129</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;accuracy_summary&nbsp;=&nbsp;tf.scalar_summary(\&quot;accuracy\&quot;,&nbsp;accuracy)\n&quot;,</td><td class="lineNumber">135</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;accuracy_summary&nbsp;=&nbsp;tf.scalar_summary(\&quot;accuracy\&quot;,&nbsp;accuracy)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">130</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">136</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">131</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">137</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">132</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Optimizer\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">138</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Optimizer\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">133</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.name_scope(\&quot;Optimizer\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td><td class="lineNumber">139</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.name_scope(\&quot;Optimizer\&quot;)&nbsp;as&nbsp;scope:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">134</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;tvars&nbsp;=&nbsp;tf.trainable_variables()\n&quot;,</td><td class="lineNumber">140</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;tvars&nbsp;=&nbsp;tf.trainable_variables()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">135</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#We&nbsp;clip&nbsp;the&nbsp;gradients&nbsp;to&nbsp;prevent&nbsp;explosion\n&quot;,</td><td class="lineNumber">141</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#We&nbsp;clip&nbsp;the&nbsp;gradients&nbsp;to&nbsp;prevent&nbsp;explosion\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">136</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;grads,&nbsp;_&nbsp;=&nbsp;tf.clip_by_global_norm(tf.gradients(cost,&nbsp;tvars),max_grad_norm)\n&quot;,</td><td class="lineNumber">142</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;grads,&nbsp;_&nbsp;=&nbsp;tf.clip_by_global_norm(tf.gradients(cost,&nbsp;tvars),max_grad_norm)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">137</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;optimizer&nbsp;=&nbsp;tf.train.AdamOptimizer(8e-3)\n&quot;,</td><td class="lineNumber">143</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;optimizer&nbsp;=&nbsp;tf.train.AdamOptimizer(8e-3)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">138</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;gradients&nbsp;=&nbsp;zip(grads,&nbsp;tvars)\n&quot;,</td><td class="lineNumber">144</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;gradients&nbsp;=&nbsp;zip(grads,&nbsp;tvars)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">139</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;train_op&nbsp;=&nbsp;optimizer.apply_gradients(gradients)\n&quot;,</td><td class="lineNumber">145</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;train_op&nbsp;=&nbsp;optimizer.apply_gradients(gradients)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">140</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;Add&nbsp;histograms&nbsp;for&nbsp;variables,&nbsp;gradients&nbsp;and&nbsp;gradient&nbsp;norms.\n&quot;,</td><td class="lineNumber">146</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;Add&nbsp;histograms&nbsp;for&nbsp;variables,&nbsp;gradients&nbsp;and&nbsp;gradient&nbsp;norms.\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">141</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;The&nbsp;for-loop&nbsp;loops&nbsp;over&nbsp;all&nbsp;entries&nbsp;of&nbsp;the&nbsp;gradient&nbsp;and&nbsp;plots\n&quot;,</td><td class="lineNumber">147</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;The&nbsp;for-loop&nbsp;loops&nbsp;over&nbsp;all&nbsp;entries&nbsp;of&nbsp;the&nbsp;gradient&nbsp;and&nbsp;plots\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">142</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;a&nbsp;histogram.&nbsp;We&nbsp;cut&nbsp;of\n&quot;,</td><td class="lineNumber">148</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;#&nbsp;a&nbsp;histogram.&nbsp;We&nbsp;cut&nbsp;of\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">143</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;for&nbsp;gradient,&nbsp;variable&nbsp;in&nbsp;gradients:\n&quot;,</td><td class="lineNumber">149</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;for&nbsp;gradient,&nbsp;variable&nbsp;in&nbsp;gradients:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">144</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;isinstance(gradient,&nbsp;ops.IndexedSlices):\n&quot;,</td><td class="lineNumber">150</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;isinstance(gradient,&nbsp;ops.IndexedSlices):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">145</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grad_values&nbsp;=&nbsp;gradient.values\n&quot;,</td><td class="lineNumber">151</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grad_values&nbsp;=&nbsp;gradient.values\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">146</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;else:\n&quot;,</td><td class="lineNumber">152</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;else:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">147</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grad_values&nbsp;=&nbsp;gradient\n&quot;,</td><td class="lineNumber">153</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grad_values&nbsp;=&nbsp;gradient\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">148</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h1&nbsp;=&nbsp;tf.histogram_summary(variable.name,&nbsp;variable)\n&quot;,</td><td class="lineNumber">154</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h1&nbsp;=&nbsp;tf.histogram_summary(variable.name,&nbsp;variable)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">149</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h2&nbsp;=&nbsp;tf.histogram_summary(variable.name&nbsp;+&nbsp;\&quot;/gradients\&quot;,&nbsp;grad_values)\n&quot;,</td><td class="lineNumber">155</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h2&nbsp;=&nbsp;tf.histogram_summary(variable.name&nbsp;+&nbsp;\&quot;/gradients\&quot;,&nbsp;grad_values)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">150</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h3&nbsp;=&nbsp;tf.histogram_summary(variable.name&nbsp;+&nbsp;\&quot;/gradient_norm\&quot;,&nbsp;clip_ops.global_norm([grad_values]))\n&quot;,</td><td class="lineNumber">156</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;h3&nbsp;=&nbsp;tf.histogram_summary(variable.name&nbsp;+&nbsp;\&quot;/gradient_norm\&quot;,&nbsp;clip_ops.global_norm([grad_values]))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">151</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">157</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">152</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Load&nbsp;the&nbsp;data\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">158</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Load&nbsp;the&nbsp;data\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">153</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;dummy&nbsp;=&nbsp;True\n&quot;,</td><td class="lineNumber">159</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;dummy&nbsp;=&nbsp;True\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">154</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;if&nbsp;dummy:\n&quot;,</td><td class="lineNumber">160</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;if&nbsp;dummy:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">155</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_train&nbsp;=&nbsp;np.loadtxt('UCR_TS_Archive_2015/Two_Patterns/Two_Patterns_TRAIN',delimiter=',')\n&quot;,</td><td class="lineNumber">161</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_train&nbsp;=&nbsp;np.loadtxt('train_data',delimiter=',')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">156</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_test_val&nbsp;=&nbsp;np.loadtxt('UCR_TS_Archive_2015/Two_Patterns/Two_Patterns_TEST',delimiter=',')\n&quot;,</td><td class="lineNumber">162</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_test_val&nbsp;=&nbsp;np.loadtxt('test_data',delimiter=',')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">157</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;else:\n&quot;,</td><td class="lineNumber">163</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;else:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">158</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_train&nbsp;=&nbsp;np.loadtxt('data_train_dummy',delimiter=',')\n&quot;,</td><td class="lineNumber">164</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_train&nbsp;=&nbsp;np.loadtxt('data_train_dummy',delimiter=',')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">159</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_test_val&nbsp;=&nbsp;np.loadtxt('data_test_dummy',delimiter=',')\n&quot;,</td><td class="lineNumber">165</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;data_test_val&nbsp;=&nbsp;np.loadtxt('data_test_dummy',delimiter=',')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">166</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">167</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;data_train&nbsp;=&nbsp;format_data(data_train)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">168</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;data_test_val&nbsp;=&nbsp;format_data(data_test_val)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">169</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">170</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Split&nbsp;data&nbsp;into&nbsp;two&nbsp;equal&nbsp;halves&nbsp;for&nbsp;validation&nbsp;and&nbsp;test\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">160</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;data_test,data_val&nbsp;=&nbsp;np.split(data_test_val,2)\n&quot;,</td><td class="lineNumber">171</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;data_test,data_val&nbsp;=&nbsp;np.split(data_test_val,2)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">172</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">173</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Skip&nbsp;the&nbsp;last&nbsp;channel/feature_map&nbsp;as&nbsp;that&nbsp;pertains&nbsp;to&nbsp;the&nbsp;labels&nbsp;repeated&nbsp;for&nbsp;each&nbsp;of&nbsp;the&nbsp;time&nbsp;step&nbsp;(in&nbsp;columns)\<br>n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">161</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_train&nbsp;=&nbsp;data_train[:,1:]\n&quot;,</td><td class="lineNumber">174</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_train&nbsp;=&nbsp;data_train[:,:,:-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">162</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_val&nbsp;=&nbsp;data_val[:,1:]\n&quot;,</td><td class="lineNumber">175</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_val&nbsp;=&nbsp;data_val[:,:,:-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">163</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_test&nbsp;=&nbsp;data_test[:,1:]\n&quot;,</td><td class="lineNumber">176</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;X_test&nbsp;=&nbsp;data_test[:,:,:-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">164</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;N&nbsp;=&nbsp;X_train.shape[0]\n&quot;,</td><td class="lineNumber">177</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;N&nbsp;=&nbsp;X_train.shape[0]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">165</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;Ntest&nbsp;=&nbsp;X_test.shape[0]\n&quot;,</td><td class="lineNumber">178</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;Ntest&nbsp;=&nbsp;X_test.shape[0]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">166</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Targets&nbsp;have&nbsp;labels&nbsp;1-indexed.&nbsp;We&nbsp;subtract&nbsp;one&nbsp;for&nbsp;0-indexed\n&quot;,</td><td class="lineNumber">179</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="changed"></td><td class="lineNumber">180</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Copy&nbsp;the&nbsp;labels&nbsp;(As&nbsp;the&nbsp;labels&nbsp;remains&nbsp;same&nbsp;for&nbsp;all&nbsp;the&nbsp;columns&nbsp;for&nbsp;a&nbsp;given&nbsp;row,&nbsp;we&nbsp;only&nbsp;pick&nbsp;up&nbsp;the&nbsp;first)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">167</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_train&nbsp;=&nbsp;data_train[:,0]-1\n&quot;,</td><td class="lineNumber">181</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_train&nbsp;=&nbsp;data_train[:,0,-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">168</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_val&nbsp;=&nbsp;data_val[:,0]-1\n&quot;,</td><td class="lineNumber">182</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_val&nbsp;=&nbsp;data_val[:,0,-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">169</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_test&nbsp;=&nbsp;data_test[:,0]-1\n&quot;,</td><td class="lineNumber">183</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;y_test&nbsp;=&nbsp;data_test[:,0,-1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">184</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber"></td><td class="empty"></td><td class="lineNumber">185</td><td class="added">&nbsp;&nbsp;&nbsp;&nbsp;&quot;print(\&quot;Train&nbsp;data&nbsp;shape:\\nLabels&nbsp;shape:\&quot;,(X_train.shape,&nbsp;y_train.shape))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">170</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">186</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">171</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Final&nbsp;code&nbsp;for&nbsp;the&nbsp;TensorBoard\n&quot;,</td><td class="lineNumber">187</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#Final&nbsp;code&nbsp;for&nbsp;the&nbsp;TensorBoard\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">172</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;merged&nbsp;=&nbsp;tf.merge_all_summaries()\n&quot;,</td><td class="lineNumber">188</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;merged&nbsp;=&nbsp;tf.merge_all_summaries()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">173</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">189</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">174</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">190</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">175</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Collect&nbsp;the&nbsp;costs&nbsp;in&nbsp;a&nbsp;numpy&nbsp;fashion\n&quot;,</td><td class="lineNumber">191</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;#&nbsp;Collect&nbsp;the&nbsp;costs&nbsp;in&nbsp;a&nbsp;numpy&nbsp;fashion\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">176</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;epochs&nbsp;=&nbsp;np.floor(batch_size*max_iterations&nbsp;/&nbsp;N)\n&quot;,</td><td class="lineNumber">192</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;epochs&nbsp;=&nbsp;np.floor(batch_size*max_iterations&nbsp;/&nbsp;N)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">177</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;print('Train&nbsp;with&nbsp;approximately&nbsp;%d&nbsp;epochs'&nbsp;%(epochs))\n&quot;,</td><td class="lineNumber">193</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;print('Train&nbsp;with&nbsp;approximately&nbsp;%d&nbsp;epochs'&nbsp;%(epochs))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">178</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;perf_collect&nbsp;=&nbsp;np.zeros((3,int(np.floor(max_iterations&nbsp;/100))))\n&quot;</td><td class="lineNumber">194</td><td class="changed">&nbsp;&nbsp;&nbsp;&nbsp;&quot;perf_collect&nbsp;=&nbsp;np.zeros((3,int(np.floor(max_iterations&nbsp;/100))))&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">179</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td><td class="lineNumber">195</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td>
+      </tr>
+      <tr>
+<td class="lineNumber">180</td><td class="equal">&nbsp;&nbsp;},</td><td class="lineNumber">196</td><td class="equal">&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">181</td><td class="equal">&nbsp;&nbsp;{</td><td class="lineNumber">197</td><td class="equal">&nbsp;&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">182</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td><td class="lineNumber">198</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">183</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td><td class="lineNumber">199</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">184</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">200</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">185</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td><td class="lineNumber">201</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;false</td>
+      </tr>
+      <tr>
+<td class="lineNumber">186</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">202</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">187</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td><td class="lineNumber">203</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">188</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td><td class="lineNumber">204</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[</td>
+      </tr>
+      <tr>
+<td class="lineNumber">189</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">205</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">190</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Session&nbsp;time\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">206</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Session&nbsp;time\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">191</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.Session()&nbsp;as&nbsp;session:\n&quot;,</td><td class="lineNumber">207</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;with&nbsp;tf.Session()&nbsp;as&nbsp;session:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">192</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;writer&nbsp;=&nbsp;tf.train.SummaryWriter(\&quot;logs/\&quot;,&nbsp;session.graph_def)\n&quot;,</td><td class="lineNumber">208</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;writer&nbsp;=&nbsp;tf.train.SummaryWriter(\&quot;logs/\&quot;,&nbsp;session.graph_def)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">193</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;tf.initialize_all_variables().run()\n&quot;,</td><td class="lineNumber">209</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;tf.initialize_all_variables().run()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">194</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">210</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">195</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">211</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">196</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;step&nbsp;=&nbsp;0\n&quot;,</td><td class="lineNumber">212</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;step&nbsp;=&nbsp;0\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">197</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(max_iterations):\n&quot;,</td><td class="lineNumber">213</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(max_iterations):\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">198</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">214</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">199</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Calculate&nbsp;some&nbsp;sizes\n&quot;,</td><td class="lineNumber">215</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Calculate&nbsp;some&nbsp;sizes\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">200</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;=&nbsp;X_train.shape[0]\n&quot;,</td><td class="lineNumber">216</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;=&nbsp;X_train.shape[0]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">201</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">217</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">202</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#Sample&nbsp;batch&nbsp;for&nbsp;training\n&quot;,</td><td class="lineNumber">218</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#Sample&nbsp;batch&nbsp;for&nbsp;training\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">203</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_train,y_train,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">219</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_train,y_train,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">204</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;state&nbsp;=&nbsp;initial_state.eval()&nbsp;&nbsp;#Fire&nbsp;up&nbsp;the&nbsp;LSTM\n&quot;,</td><td class="lineNumber">220</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;state&nbsp;=&nbsp;initial_state.eval()&nbsp;&nbsp;#Fire&nbsp;up&nbsp;the&nbsp;LSTM\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">205</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">221</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">206</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#Next&nbsp;line&nbsp;does&nbsp;the&nbsp;actual&nbsp;training\n&quot;,</td><td class="lineNumber">222</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;#Next&nbsp;line&nbsp;does&nbsp;the&nbsp;actual&nbsp;training\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">207</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;session.run(train_op,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,targets:&nbsp;y_batch,initial_state:&nbsp;state,keep_prob:dropout})<br>\n&quot;,</td><td class="lineNumber">223</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;session.run(train_op,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,targets:&nbsp;y_batch,initial_state:&nbsp;state,keep_prob:dropout})<br>\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">208</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;i==0:\n&quot;,</td><td class="lineNumber">224</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;i==0:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">209</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Uset&nbsp;this&nbsp;line&nbsp;to&nbsp;check&nbsp;before-and-after&nbsp;test&nbsp;accuracy\n&quot;,</td><td class="lineNumber">225</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Uset&nbsp;this&nbsp;line&nbsp;to&nbsp;check&nbsp;before-and-after&nbsp;test&nbsp;accuracy\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">210</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acc_test_before&nbsp;=&nbsp;check_test(X_test,y_test,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">226</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acc_test_before&nbsp;=&nbsp;check_test(X_test,y_test,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">211</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;session.run([size1,size2],feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,targets:&nbsp;y_batch,initial_state:&nbsp;state,k<br>eep_prob:dropout})\n&quot;,</td><td class="lineNumber">227</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;session.run([size1,size2],feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,targets:&nbsp;y_batch,initial_state:&nbsp;state,k<br>eep_prob:dropout})\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">212</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(result[0])\n&quot;,</td><td class="lineNumber">228</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(result[0])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">213</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(result[1])\n&quot;,</td><td class="lineNumber">229</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(result[1])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">214</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;i%100&nbsp;==&nbsp;0:\n&quot;,</td><td class="lineNumber">230</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;i%100&nbsp;==&nbsp;0:\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">215</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Evaluate&nbsp;training&nbsp;performance\n&quot;,</td><td class="lineNumber">231</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Evaluate&nbsp;training&nbsp;performance\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">216</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_train,y_train,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">232</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_train,y_train,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">217</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cost_out&nbsp;=&nbsp;session.run(cost,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state:state,keep_prob<br>:1})\n&quot;,</td><td class="lineNumber">233</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cost_out&nbsp;=&nbsp;session.run(cost,feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state:state,keep_prob<br>:1})\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">218</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[0,step]&nbsp;=&nbsp;cost_out\n&quot;,</td><td class="lineNumber">234</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[0,step]&nbsp;=&nbsp;cost_out\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">219</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#print('At&nbsp;%d&nbsp;out&nbsp;of&nbsp;%d&nbsp;train&nbsp;cost&nbsp;is&nbsp;%.3f'&nbsp;%(i,max_iterations,cost_out))&nbsp;#Uncomment&nbsp;line&nbsp;to&nbsp;follow&nbsp;train&nbsp;cos<br>t\n&quot;,</td><td class="lineNumber">235</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#print('At&nbsp;%d&nbsp;out&nbsp;of&nbsp;%d&nbsp;train&nbsp;cost&nbsp;is&nbsp;%.3f'&nbsp;%(i,max_iterations,cost_out))&nbsp;#Uncomment&nbsp;line&nbsp;to&nbsp;follow&nbsp;train&nbsp;cos<br>t\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">220</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">236</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">221</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Evaluate&nbsp;validation&nbsp;performance\n&quot;,</td><td class="lineNumber">237</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Evaluate&nbsp;validation&nbsp;performance\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">222</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_val,y_val,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">238</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_batch,&nbsp;y_batch&nbsp;=&nbsp;sample_batch(X_val,y_val,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">223</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;session.run([cost,merged,accuracy],feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state<br>:state,keep_prob:1})\n&quot;,</td><td class="lineNumber">239</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;session.run([cost,merged,accuracy],feed_dict&nbsp;=&nbsp;{input_data:&nbsp;X_batch,&nbsp;targets:&nbsp;y_batch,&nbsp;initial_state<br>:state,keep_prob:1})\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">224</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cost_out&nbsp;=&nbsp;result[0]\n&quot;,</td><td class="lineNumber">240</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cost_out&nbsp;=&nbsp;result[0]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">225</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[1,step]&nbsp;=&nbsp;cost_out\n&quot;,</td><td class="lineNumber">241</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[1,step]&nbsp;=&nbsp;cost_out\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">226</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acc_val&nbsp;=&nbsp;result[2]\n&quot;,</td><td class="lineNumber">242</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acc_val&nbsp;=&nbsp;result[2]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">227</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[2,step]&nbsp;=&nbsp;acc_val\n&quot;,</td><td class="lineNumber">243</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perf_collect[2,step]&nbsp;=&nbsp;acc_val\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">228</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('At&nbsp;%d&nbsp;out&nbsp;of&nbsp;%d&nbsp;val&nbsp;cost&nbsp;is&nbsp;%.3f&nbsp;and&nbsp;val&nbsp;acc&nbsp;is&nbsp;%.3f'&nbsp;%(i,max_iterations,cost_out,acc_val))\n&quot;,</td><td class="lineNumber">244</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('At&nbsp;%d&nbsp;out&nbsp;of&nbsp;%d&nbsp;val&nbsp;cost&nbsp;is&nbsp;%.3f&nbsp;and&nbsp;val&nbsp;acc&nbsp;is&nbsp;%.3f'&nbsp;%(i,max_iterations,cost_out,acc_val))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">229</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">245</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">230</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Write&nbsp;information&nbsp;to&nbsp;TensorBoard\n&quot;,</td><td class="lineNumber">246</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Write&nbsp;information&nbsp;to&nbsp;TensorBoard\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">231</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summary_str&nbsp;=&nbsp;result[1]\n&quot;,</td><td class="lineNumber">247</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summary_str&nbsp;=&nbsp;result[1]\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">232</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writer.add_summary(summary_str,&nbsp;i)\n&quot;,</td><td class="lineNumber">248</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writer.add_summary(summary_str,&nbsp;i)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">233</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writer.flush()\n&quot;,</td><td class="lineNumber">249</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writer.flush()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">234</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">250</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">235</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step&nbsp;+=1\n&quot;,</td><td class="lineNumber">251</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step&nbsp;+=1\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">236</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;acc_test&nbsp;=&nbsp;check_test(X_test,y_test,batch_size,num_steps)\n&quot;,</td><td class="lineNumber">252</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&nbsp;&nbsp;acc_test&nbsp;=&nbsp;check_test(X_test,y_test,batch_size,num_steps)\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">237</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">253</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">238</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Additional&nbsp;plots\&quot;\&quot;\&quot;\n&quot;,</td><td class="lineNumber">254</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\&quot;\&quot;\&quot;Additional&nbsp;plots\&quot;\&quot;\&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">239</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;print('The&nbsp;accuracy&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;is&nbsp;%.3f,&nbsp;before&nbsp;training&nbsp;was&nbsp;%.3f'&nbsp;%(acc_test,acc_test_before))\n&quot;,</td><td class="lineNumber">255</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;print('The&nbsp;accuracy&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;is&nbsp;%.3f,&nbsp;before&nbsp;training&nbsp;was&nbsp;%.3f'&nbsp;%(acc_test,acc_test_before))\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">240</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[0],label='Train')\n&quot;,</td><td class="lineNumber">256</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[0],label='Train')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">241</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[1],label&nbsp;=&nbsp;'Valid')\n&quot;,</td><td class="lineNumber">257</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[1],label&nbsp;=&nbsp;'Valid')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">242</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[2],label&nbsp;=&nbsp;'Valid&nbsp;accuracy')\n&quot;,</td><td class="lineNumber">258</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.plot(perf_collect[2],label&nbsp;=&nbsp;'Valid&nbsp;accuracy')\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">243</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.axis([0,&nbsp;step,&nbsp;0,&nbsp;np.max(perf_collect)])\n&quot;,</td><td class="lineNumber">259</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.axis([0,&nbsp;step,&nbsp;0,&nbsp;np.max(perf_collect)])\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">244</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.legend()\n&quot;,</td><td class="lineNumber">260</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.legend()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">245</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.show()\n&quot;,</td><td class="lineNumber">261</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;plt.show()\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">246</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td><td class="lineNumber">262</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">247</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;</td><td class="lineNumber">263</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;\n&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">248</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td><td class="lineNumber">264</td><td class="equal">&nbsp;&nbsp;&nbsp;]</td>
+      </tr>
+      <tr>
+<td class="lineNumber">249</td><td class="equal">&nbsp;&nbsp;},</td><td class="lineNumber">265</td><td class="equal">&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">250</td><td class="equal">&nbsp;&nbsp;{</td><td class="lineNumber">266</td><td class="equal">&nbsp;&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">251</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td><td class="lineNumber">267</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;cell_type&quot;:&nbsp;&quot;code&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">252</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td><td class="lineNumber">268</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;execution_count&quot;:&nbsp;null,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">253</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">269</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">254</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;true</td><td class="lineNumber">270</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;collapsed&quot;:&nbsp;true</td>
+      </tr>
+      <tr>
+<td class="lineNumber">255</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">271</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">256</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td><td class="lineNumber">272</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;outputs&quot;:&nbsp;[],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">257</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[]</td><td class="lineNumber">273</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;source&quot;:&nbsp;[]</td>
+      </tr>
+      <tr>
+<td class="lineNumber">258</td><td class="equal">&nbsp;&nbsp;}</td><td class="lineNumber">274</td><td class="equal">&nbsp;&nbsp;}</td>
+      </tr>
+      <tr>
+<td class="lineNumber">259</td><td class="equal">&nbsp;],</td><td class="lineNumber">275</td><td class="equal">&nbsp;],</td>
+      </tr>
+      <tr>
+<td class="lineNumber">260</td><td class="equal">&nbsp;&quot;metadata&quot;:&nbsp;{</td><td class="lineNumber">276</td><td class="equal">&nbsp;&quot;metadata&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">261</td><td class="equal">&nbsp;&nbsp;&quot;kernelspec&quot;:&nbsp;{</td><td class="lineNumber">277</td><td class="equal">&nbsp;&nbsp;&quot;kernelspec&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">262</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;display_name&quot;:&nbsp;&quot;Python&nbsp;2&quot;,</td><td class="lineNumber">278</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;display_name&quot;:&nbsp;&quot;Python&nbsp;2&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">263</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;language&quot;:&nbsp;&quot;python&quot;,</td><td class="lineNumber">279</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;language&quot;:&nbsp;&quot;python&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">264</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;python2&quot;</td><td class="lineNumber">280</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;python2&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">265</td><td class="equal">&nbsp;&nbsp;},</td><td class="lineNumber">281</td><td class="equal">&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">266</td><td class="equal">&nbsp;&nbsp;&quot;language_info&quot;:&nbsp;{</td><td class="lineNumber">282</td><td class="equal">&nbsp;&nbsp;&quot;language_info&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">267</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;codemirror_mode&quot;:&nbsp;{</td><td class="lineNumber">283</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;codemirror_mode&quot;:&nbsp;{</td>
+      </tr>
+      <tr>
+<td class="lineNumber">268</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;ipython&quot;,</td><td class="lineNumber">284</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;ipython&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">269</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;version&quot;:&nbsp;2</td><td class="lineNumber">285</td><td class="equal">&nbsp;&nbsp;&nbsp;&nbsp;&quot;version&quot;:&nbsp;2</td>
+      </tr>
+      <tr>
+<td class="lineNumber">270</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td><td class="lineNumber">286</td><td class="equal">&nbsp;&nbsp;&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">271</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;file_extension&quot;:&nbsp;&quot;.py&quot;,</td><td class="lineNumber">287</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;file_extension&quot;:&nbsp;&quot;.py&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">272</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;mimetype&quot;:&nbsp;&quot;text/x-python&quot;,</td><td class="lineNumber">288</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;mimetype&quot;:&nbsp;&quot;text/x-python&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">273</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;python&quot;,</td><td class="lineNumber">289</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;&quot;python&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">274</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;nbconvert_exporter&quot;:&nbsp;&quot;python&quot;,</td><td class="lineNumber">290</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;nbconvert_exporter&quot;:&nbsp;&quot;python&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">275</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;pygments_lexer&quot;:&nbsp;&quot;ipython2&quot;,</td><td class="lineNumber">291</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;pygments_lexer&quot;:&nbsp;&quot;ipython2&quot;,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">276</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;version&quot;:&nbsp;&quot;2.7.6&quot;</td><td class="lineNumber">292</td><td class="equal">&nbsp;&nbsp;&nbsp;&quot;version&quot;:&nbsp;&quot;2.7.6&quot;</td>
+      </tr>
+      <tr>
+<td class="lineNumber">277</td><td class="equal">&nbsp;&nbsp;}</td><td class="lineNumber">293</td><td class="equal">&nbsp;&nbsp;}</td>
+      </tr>
+      <tr>
+<td class="lineNumber">278</td><td class="equal">&nbsp;},</td><td class="lineNumber">294</td><td class="equal">&nbsp;},</td>
+      </tr>
+      <tr>
+<td class="lineNumber">279</td><td class="equal">&nbsp;&quot;nbformat&quot;:&nbsp;4,</td><td class="lineNumber">295</td><td class="equal">&nbsp;&quot;nbformat&quot;:&nbsp;4,</td>
+      </tr>
+      <tr>
+<td class="lineNumber">280</td><td class="equal">&nbsp;&quot;nbformat_minor&quot;:&nbsp;0</td><td class="lineNumber">296</td><td class="equal">&nbsp;&quot;nbformat_minor&quot;:&nbsp;0</td>
+      </tr>
+      <tr>
+<td class="lineNumber">281</td><td class="equal">}</td><td class="lineNumber">297</td><td class="equal">}</td>
+      </tr>
+      <tr>
+<td class="lineNumber">282</td><td class="equal"></td><td class="lineNumber">298</td><td class="equal"></td>
+      </tr>
+  </table>
+</body>
